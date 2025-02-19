@@ -35,7 +35,7 @@ A phishing email contains a **fake PayPal login link**. Scanning it with **UrlSc
 
 ---
 
-## 🦠 Using Abuse.ch to Track Malware & Botnet Indicators  
+##  Using Abuse.ch to Track Malware & Botnet Indicators  
 
 ### 🔹 What is Abuse.ch?  
 [Abuse.ch](https://abuse.ch/) provides **threat intelligence feeds** for tracking malware, botnets, and malicious URLs.  
@@ -92,7 +92,7 @@ A **server logs repeated login attempts** from an unknown IP. **Cisco Talos iden
 
 ---
 
-## 🔥 Conclusion & Next Steps  
+## Conclusion  
 
 ✔️ Threat Intelligence helps in **proactive cybersecurity defense**.  
 ✔️ Using **UrlScan.io, Abuse.ch, PhishTool, and Cisco Talos**, we can:  
@@ -101,5 +101,3 @@ A **server logs repeated login attempts** from an unknown IP. **Cisco Talos iden
    ✅ Strengthen **SOC & Incident Response** workflows.  
 
 ---
-
-🚀 **Keep Learning, Keep Hunting!** 🛡️
