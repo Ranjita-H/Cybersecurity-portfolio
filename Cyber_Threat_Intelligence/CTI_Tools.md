@@ -1,174 +1,115 @@
-Understanding the Basics of Threat Intelligence & Its Classifications
+# 🛡️ Threat Intelligence & Investigation Tools  
 
-What is Threat Intelligence?
+This repository contains my documentation on **Threat Intelligence basics, classifications, and hands-on investigations** using popular cybersecurity tools.  
 
-Threat intelligence (TI) is actionable information about cyber threats and threat actors that helps organizations detect, prevent, and mitigate cyber risks. It provides insights into attack methods, indicators of compromise (IoCs), and tactics, techniques, and procedures (TTPs) used by adversaries.
+---
 
-Types of Threat Intelligence
+## 📌 Understanding the Basics of Threat Intelligence & Its Classifications  
 
-Threat intelligence is broadly classified into four categories:
+Threat Intelligence (TI) is the process of collecting, analyzing, and applying knowledge about cyber threats to enhance security defenses.  
 
-Strategic Intelligence
+### 🔍 Threat Intelligence Classifications  
+1️⃣ **Strategic Threat Intelligence** – High-level insights for executives on attack motives & trends.  
+2️⃣ **Tactical Threat Intelligence** – Focuses on attacker **TTPs (Tactics, Techniques, and Procedures)**.  
+3️⃣ **Operational Threat Intelligence** – Real-time intelligence about **ongoing threats & incidents**.  
+4️⃣ **Technical Threat Intelligence** – Specific indicators like **malicious IPs, hashes, domains**.  
 
-High-level, non-technical insights for executives and decision-makers.
+---
 
-Example: Reports on emerging cyber threats affecting the financial sector.
+## 🕵️ Using UrlScan.io to Scan for Malicious URLs  
 
-Tactical Intelligence
+### 🔹 What is UrlScan.io?  
+[UrlScan.io](https://urlscan.io/) is an online service for **analyzing URLs and webpages** to detect malicious activity.  
 
-Provides insights into specific TTPs used by cybercriminals.
+### 🛠️ Steps to Scan a URL  
+1. Visit [UrlScan.io](https://urlscan.io/).  
+2. Enter the **suspicious URL** in the search box.  
+3. Click **"Public Scan"** (or **"Private Scan"** for confidential analysis).  
+4. Analyze:  
+   - **Screenshot** (checks for phishing).  
+   - **Outbound requests** (identifies C2 servers).  
+   - **Injected scripts** (detects malware payloads).  
 
-Example: Understanding how phishing campaigns target banking customers.
+### 📌 Example Use Case  
+A phishing email contains a **fake PayPal login link**. Scanning it with **UrlScan.io** reveals it’s **hosted on a suspicious server** and contains **keylogging scripts**.  
 
-Operational Intelligence
+---
 
-Focuses on real-time attack data, often used by SOC analysts.
+## 🦠 Using Abuse.ch to Track Malware & Botnet Indicators  
 
-Example: IoCs (IPs, domains, hashes) linked to active malware campaigns.
+### 🔹 What is Abuse.ch?  
+[Abuse.ch](https://abuse.ch/) provides **threat intelligence feeds** for tracking malware, botnets, and malicious URLs.  
 
-Technical Intelligence
+### 📌 Key Intelligence Feeds  
+- **ThreatFox** – IOC database (IPs, domains, hashes).  
+- **URLhaus** – Tracks **malware distribution URLs**.  
+- **Feodo Tracker** – Monitors **botnet C2 servers**.  
 
-Deals with forensic-level data, including malware samples and vulnerabilities.
+### 🛠️ Steps to Use Abuse.ch  
+1. Visit [ThreatFox](https://threatfox.abuse.ch/).  
+2. Search for **file hashes, IPs, or domains**.  
+3. **Analyze the results** for known threats.  
 
-Example: Reverse engineering malware to analyze its behavior.
+### 📌 Example Use Case  
+You find a **file attachment** in an email. Searching its **SHA256 hash** on **ThreatFox** shows it’s linked to the **Emotet banking trojan**.  
 
-Using UrlScan.io to Scan for Malicious URLs
+---
 
-What is UrlScan.io?
+## 📧 Investigating Phishing Emails Using PhishTool  
 
-UrlScan.io is a powerful online service for scanning and analyzing URLs. It helps in identifying malicious websites, phishing pages, and fraudulent activities by providing:
+### 🔹 What is PhishTool?  
+[PhishTool](https://phishtool.com/) is an advanced phishing analysis platform that extracts email metadata, validates SPF/DKIM, and detects malicious links.  
 
-Website snapshots.
+### 🛠️ Steps to Investigate a Phishing Email  
+1. Open **PhishTool** and upload the **phishing email**.  
+2. **Analyze metadata**, including:  
+   - Sender domain & SPF/DKIM records.  
+   - Malicious links & redirections.  
+   - Attachment hashes (checks for malware).  
+3. Cross-check with **Abuse.ch** or **Cisco Talos**.  
 
-Domain reputation analysis.
+### 📌 Example Use Case  
+A "PayPal security alert" email asks for login details. **PhishTool reveals domain spoofing and hidden tracking pixels**, confirming it's phishing.  
 
-Network request logs and redirects.
+---
 
-How to Use UrlScan.io for Threat Intelligence
+## 🔎 Using Cisco Talos Intelligence for Threat Intel Gathering  
 
-Visit https://urlscan.io.
+### 🔹 What is Cisco Talos?  
+[Cisco Talos](https://talosintelligence.com/) is a **threat intelligence platform** providing data on malware, DNS reputation, and attack campaigns.  
 
-Enter the URL you want to scan.
+### 🛠️ Steps to Use Cisco Talos  
+1. Go to [Talos Intelligence](https://talosintelligence.com/).  
+2. Enter an **IP, domain, or file hash** in the search bar.  
+3. **Review the reputation score**:  
+   - ✅ **Good** – Likely safe.  
+   - ⚠️ **Neutral** – Needs investigation.  
+   - ❌ **Malicious** – Associated with cyber threats.  
+4. Analyze **historical activity, geolocation, and attack sources**.  
 
-Click Submit and wait for the scan to complete.
+### 📌 Example Use Case  
+A **server logs repeated login attempts** from an unknown IP. **Cisco Talos identifies it as a botnet IP**, allowing proactive blocking.  
 
-Analyze the results:
+---
 
-Screenshot: Check the visual representation of the website.
+## 🔥 Conclusion & Next Steps  
 
-Domain Analysis: Verify WHOIS details and hosting information.
+✔️ Threat Intelligence helps in **proactive cybersecurity defense**.  
+✔️ Using **UrlScan.io, Abuse.ch, PhishTool, and Cisco Talos**, we can:  
+   ✅ Detect phishing attacks & malware campaigns.  
+   ✅ Track botnet activity & malicious indicators.  
+   ✅ Strengthen **SOC & Incident Response** workflows.  
 
-Request Log: Identify third-party requests and suspicious redirects.
+💡 **Next Steps:**  
+- Keep updating this repository with new tools & case studies!  
+- Share findings on **LinkedIn, blogs, and cybersecurity forums**.  
 
-Cross-check against known threat feeds (e.g., VirusTotal, OpenPhish).
+---
 
-Use Case: Investigate phishing URLs received in suspicious emails.
+## 📫 Connect with Me  
+- 💼 [LinkedIn](https://linkedin.com/in/ranjita-hukkeri-a9b50ba9)  
+- 📧 ranjuranjita27@gmail.com  
 
-Using Abuse.ch to Track Malware and Botnet Indicators
+---
 
-What is Abuse.ch?
-
-Abuse.ch provides real-time tracking of malware, botnets, and cyber threats. It offers threat intelligence feeds that help security professionals:
-
-Identify active malware samples.
-
-Detect command-and-control (C2) infrastructure.
-
-Monitor domains/IPs involved in cybercrime.
-
-Key Abuse.ch Threat Intelligence Feeds
-
-URLhaus: Tracks malicious URLs distributing malware.
-
-ThreatFox: Community-driven threat intelligence platform.
-
-MalwareBazaar: Repository of malware samples and IoCs.
-
-How to Use Abuse.ch for Threat Research
-
-Visit https://abuse.ch.
-
-Choose a relevant threat feed (e.g., URLhaus for malicious URLs).
-
-Search for specific IoCs (domains, hashes, IPs).
-
-Download IoC lists and integrate them into security tools (e.g., SIEM, IDS/IPS).
-
-Use Case: Investigating an unknown IP found in firewall logs.
-
-Investigating Phishing Emails Using PhishTool
-
-What is PhishTool?
-
-PhishTool is a forensic analysis platform designed to investigate phishing emails. It helps SOC analysts and threat hunters by extracting:
-
-Email headers.
-
-Embedded malicious URLs.
-
-Phishing indicators.
-
-How to Analyze Phishing Emails with PhishTool
-
-Visit https://phishtool.com.
-
-Upload a phishing email (EML format) or paste raw email headers.
-
-Analyze the extracted data:
-
-Sender information: Verify if the email is spoofed.
-
-Embedded URLs: Check for malicious redirects.
-
-Attachments: Inspect for malware payloads.
-
-Cross-check results with threat intelligence platforms (e.g., VirusTotal, Abuse.ch).
-
-Use Case: Validating a suspected phishing email received by an employee.
-
-Using Cisco's Talos Intelligence Platform for Intel Gathering
-
-What is Cisco Talos?
-
-Cisco Talos Intelligence is a threat intelligence research team that provides:
-
-Global threat visibility.
-
-Malware analysis and indicators.
-
-IP and domain reputation services.
-
-How to Use Talos for Threat Intelligence
-
-Visit https://talosintelligence.com/.
-
-Use the IP & Domain Reputation Center to:
-
-Search for malicious domains or IPs.
-
-View historical threat data.
-
-Assess email security risk (SPF, DKIM, DMARC status).
-
-Check Talos Blog & Threat Advisories for updates on emerging cyber threats.
-
-Integrate Talos threat feeds into security tools for automated monitoring.
-
-Use Case: Checking if an IP address flagged in firewall logs is associated with malicious activity.
-
-Summary
-
-This documentation serves as a practical guide for cybersecurity professionals to leverage threat intelligence platforms for enhanced security operations. These tools help detect, analyze, and respond to cyber threats effectively:
-
-Platform and Use Case:
-
-UrlScan.io:Scan & analyze suspicious URLs
-
-Abuse.ch:Track malware, botnets, & C2 infrastructure
-
-PhishTool:Investigate phishing emails
-
-Cisco Talos->Gather domain/IP reputation data & cyber threat insights
-
-
-
+🚀 **Keep Learning, Keep Hunting!** 🛡️
