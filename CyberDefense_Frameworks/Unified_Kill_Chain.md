@@ -67,10 +67,6 @@ Conclusion
 The Unified Kill Chain provides a more detailed and adaptable approach to understanding cyber threats compared to traditional frameworks. By analyzing attack progression across multiple stages, organizations can enhance their defense strategies and better protect their systems from sophisticated adversaries.
 
 
----
-
-### **Unified Kill Chain README.md**
-```markdown
 # Unified Kill Chain Framework
 
 ## Overview
@@ -125,3 +121,4 @@ graph TD;
     N --> O[Impact];
     O --> P[Exfiltration];
     P --> Q[Monetization];
+    
