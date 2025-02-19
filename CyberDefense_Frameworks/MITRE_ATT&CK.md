@@ -1,83 +1,50 @@
- Overview
+# MITRE ATT&CK Framework
 
-The MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) framework is a globally recognized cybersecurity knowledge base that categorizes tactics and techniques used by adversaries during cyberattacks. It helps security professionals detect, analyze, and defend against threats based on real-world attack behaviors.
+## Overview
+[MITRE ATT&CK](https://attack.mitre.org/) (Adversarial Tactics, Techniques, and Common Knowledge) is a globally accessible knowledge base of cyber adversary behavior. It provides a structured way to analyze, detect, and respond to cybersecurity threats based on real-world attack techniques.
 
-Structure of MITRE ATT&CK
+## Key Components
+MITRE ATT&CK is divided into several matrices, with the most widely used being:
+- **Enterprise Matrix** (Windows, Linux, macOS, Cloud, Network, Containers)
+- **Mobile Matrix** (Android, iOS)
+- **ICS Matrix** (Industrial Control Systems)
 
-MITRE ATT&CK is divided into several key components:
+Each matrix consists of:
+1. **Tactics** – The "why" behind an attack (e.g., Persistence, Defense Evasion).
+2. **Techniques & Sub-Techniques** – The "how" attackers achieve their goal (e.g., Phishing, Process Injection).
+3. **Procedures** – Real-world methods used by threat actors to implement a technique.
 
-1. Tactics
+## ATT&CK Tactics
+Some key **tactics** in the MITRE ATT&CK framework include:
 
-Tactics represent the high-level goals of an adversary during an attack. These include:
+| Tactic                | Description |
+|----------------------|-------------|
+| **Initial Access**   | Gaining a foothold (e.g., Spearphishing, Exploiting Public-Facing Applications). |
+| **Execution**        | Running malicious code (e.g., PowerShell, Scheduled Tasks). |
+| **Persistence**      | Maintaining access (e.g., Registry Run Keys, Startup Items). |
+| **Privilege Escalation** | Gaining higher-level permissions (e.g., Kernel Exploits, Sudo Exploitation). |
+| **Defense Evasion**  | Avoiding detection (e.g., Obfuscated Files, Code Injection). |
+| **Credential Access** | Stealing sensitive credentials (e.g., Keylogging, Credential Dumping). |
+| **Discovery**        | Learning about the environment (e.g., System Information Discovery). |
+| **Lateral Movement** | Moving within a network (e.g., Remote Desktop Protocol (RDP), Pass the Hash). |
+| **Collection**       | Gathering data (e.g., Screen Capture, Browser Session Hijacking). |
+| **Exfiltration**     | Sending stolen data outside the organization (e.g., Cloud Storage, Encrypted Channels). |
+| **Impact**          | Disrupting, destroying, or modifying systems (e.g., Ransomware, Data Destruction). |
 
-Initial Access – Gaining entry into a system.
+## ATT&CK Techniques
+Each **tactic** consists of multiple **techniques** and **sub-techniques** that describe how adversaries achieve their objectives.  
+You can explore them in detail via the **[MITRE ATT&CK Navigator](https://attack.mitre.org/)**.
 
-Execution – Running malicious code.
+## Use Cases of MITRE ATT&CK
+Organizations use ATT&CK for:
+- **Threat Intelligence** – Understanding real-world attack behavior.
+- **Red Teaming** – Simulating attacks for testing security defenses.
+- **SOC Operations** – Detecting and responding to threats.
+- **Incident Response** – Investigating and mitigating breaches.
 
-Persistence – Maintaining access.
-
-Privilege Escalation – Gaining higher system privileges.
-
-Defense Evasion – Avoiding detection.
-
-Credential Access – Stealing login credentials.
-
-Discovery – Learning about the system and network.
-
-Lateral Movement – Expanding access within the network.
-
-Collection – Gathering data of interest.
-
-Exfiltration – Stealing data from the system.
-
-Impact – Disrupting or destroying systems.
-
-2. Techniques
-
-Techniques describe specific methods attackers use to achieve their objectives within each tactic. For example:
-
-Phishing (Initial Access)
-
-PowerShell Execution (Execution)
-
-Registry Run Keys (Persistence)
-
-Pass-the-Hash (Credential Access)
-
-3. Procedures
-
-Procedures describe real-world implementations of techniques used by specific threat actors.
-
-4. Groups & Software
-
-Adversary Groups: Cybercriminal groups and nation-state actors using specific techniques.
-
-Software: Tools and malware used by adversaries.
-
-Applications in Cybersecurity
-
-Threat Intelligence: Understanding real-world attack methods.
-
-Detection & Response: Mapping security logs to ATT&CK techniques.
-
-Adversary Emulation: Simulating attacks to test defenses.
-
-Threat Hunting: Proactively searching for attacker behaviors.
-
-Example Use Case
-
-An attacker attempts to breach a company's network:
-
-Initial Access: A phishing email delivers malware.
-
-Execution: Malware executes via PowerShell.
-
-Privilege Escalation: Exploiting a vulnerability to gain admin rights.
-
-Lateral Movement: Using stolen credentials to access critical systems.
-
-Exfiltration: Sending stolen files to an external server.
-
-Conclusion
-
-The MITRE ATT&CK framework provides a structured approach for understanding cyber threats based on real-world attack techniques. By aligning security operations with ATT&CK, organizations can enhance their threat detection, incident response, and overall cybersecurity posture.
+## MITRE ATT&CK Diagram
+```mermaid
+graph TD;
+    A[Tactics] -->|Why?| B[Techniques];
+    B -->|How?| C[Procedures];
+    C -->|Real-World Attacks| D[Threat Actors];

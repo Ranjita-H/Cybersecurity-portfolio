@@ -100,16 +100,6 @@ A **server logs repeated login attempts** from an unknown IP. **Cisco Talos iden
    ✅ Track botnet activity & malicious indicators.  
    ✅ Strengthen **SOC & Incident Response** workflows.  
 
-💡 **Next Steps:**  
-- Keep updating this repository with new tools & case studies!  
-- Share findings on **LinkedIn, blogs, and cybersecurity forums**.  
-
----
-
-## 📫 Connect with Me  
-- 💼 [LinkedIn](https://linkedin.com/in/ranjita-hukkeri-a9b50ba9)  
-- 📧 ranjuranjita27@gmail.com  
-
 ---
 
 🚀 **Keep Learning, Keep Hunting!** 🛡️
