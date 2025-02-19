@@ -1,73 +1,56 @@
-Diamond Model of Intrusion Analysis
+# Diamond Model of Intrusion Analysis
 
-Overview
+## Overview
+The **Diamond Model of Intrusion Analysis** is a cybersecurity framework designed to understand and analyze cyber threats by mapping relationships between **Adversaries, Capabilities, Infrastructure, and Victims**. It provides a structured approach to **threat intelligence** and **incident response**.
 
-The Diamond Model of Intrusion Analysis is a cybersecurity framework used to analyze and track cyber threats. It provides a structured approach to understanding cyberattacks by breaking them down into four key elements: Adversary, Capability, Infrastructure, and Victim. The model helps security analysts detect, respond to, and mitigate cyber threats effectively.
+## The Four Core Elements
+The **Diamond Model** is built on four fundamental elements:
 
-Core Components
+| Element | Description |
+|---------|------------|
+| **Adversary** | The attacker or threat actor responsible for the intrusion. |
+| **Capability** | The tools, malware, or exploits used by the attacker. |
+| **Infrastructure** | The network, IP addresses, and servers used to deliver the attack. |
+| **Victim** | The target or entity affected by the attack. |
 
-The model consists of four essential elements:
+Each of these elements is interconnected, forming a **diamond shape** that represents an attack.
 
-1. Adversary
+## Diamond Model Diagram
+```mermaid
+graph TD;
+    A[Adversary] -->|Uses| B[Capability];
+    B -->|Operates on| C[Infrastructure];
+    C -->|Targets| D[Victim];
+    D -->|Influences| A;
 
-Refers to the entity responsible for carrying out the cyberattack.
 
-Can be an individual, group, or nation-state.
 
-Motivation, tactics, and behaviors are analyzed to attribute attacks.
+## Core Features of the Model
+1. **Relationships & Attribution** – Helps map how attackers operate.
+2. **Multiple Dimensions** – Can be extended with metadata (e.g., time, location, methodology).
+3. **Link Analysis** – Enables tracking adversaries across different attacks.
+4. **Scalability** – Can be used for both simple attacks and complex APT campaigns.
 
-2. Capability
+## Example Use Case
+Imagine a **phishing attack** where:
+- The **Adversary** is a cybercriminal group.
+- The **Capability** is a malicious email attachment.
+- The **Infrastructure** includes phishing domains and compromised servers.
+- The **Victim** is an employee of a targeted organization.
 
-Represents the tools, malware, exploits, and techniques used by adversaries.
+By analyzing these relationships, defenders can identify **attack patterns**, improve **detection**, and mitigate threats proactively.
 
-Includes zero-day vulnerabilities, ransomware, phishing kits, and more.
+## Benefits of the Diamond Model
+- **Structured Threat Analysis** – Helps analysts understand how attacks are executed.
+- **Attribution and Tracking** – Enables better mapping of adversary behaviors.
+- **Integration with Other Frameworks** – Can be combined with **MITRE ATT&CK** and **Cyber Kill Chain** for a comprehensive defense strategy.
 
-3. Infrastructure
+## Limitations
+- **Does not define specific attack techniques** – Needs integration with frameworks like **MITRE ATT&CK**.
+- **Requires additional intelligence sources** – Relies on logs, reports, and forensic data.
 
-Consists of the systems, servers, and networks used by adversaries to conduct attacks.
+## Additional Resources
+- [The Diamond Model Whitepaper (PDF)](https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf)
+- [MITRE ATT&CK Framework](https://attack.mitre.org/)
 
-Examples include botnets, command-and-control (C2) servers, and compromised cloud services.
-
-4. Victim
-
-The target of the cyberattack, which can be individuals, organizations, or government entities.
-
-Understanding the victim profile helps in predicting potential future attacks.
-
-Relationships in the Diamond Model
-
-The four elements form a diamond shape, where each element is connected:
-
-Adversary ↔ Capability: Attackers use capabilities to launch attacks.
-
-Capability ↔ Infrastructure: The attack tools rely on specific infrastructure.
-
-Infrastructure ↔ Victim: Attackers use infrastructure to reach their targets.
-
-Victim ↔ Adversary: Attackers target victims for various motivations (financial, espionage, disruption).
-
-Applications in Cybersecurity
-
-Threat Attribution: Identifies threat actors based on tools and infrastructure.
-
-Incident Response: Helps security teams analyze and respond to incidents.
-
-Threat Intelligence: Supports proactive defense by understanding attack patterns.
-
-Mitigation Strategies: Enables organizations to harden defenses against adversaries.
-
-Example Use Case
-
-An organization detects malware on its network. Using the Diamond Model:
-
-Adversary: Attribution is made to an APT (Advanced Persistent Threat) group.
-
-Capability: The malware's code is analyzed for exploits and backdoors.
-
-Infrastructure: The C2 server is identified and blocked.
-
-Victim: The organization strengthens security based on attack patterns.
-
-Conclusion
-
-The Diamond Model is a powerful tool for cybersecurity professionals to analyze and counter cyber threats effectively. By understanding the relationships between adversaries, capabilities, infrastructure, and victims, organizations can improve their threat detection and response strategies.
+---
