@@ -24,7 +24,7 @@ graph TD;
     D -->|Influences| A;
 
 
-
+```
 ## Core Features of the Model
 1. **Relationships & Attribution** – Helps map how attackers operate.
 2. **Multiple Dimensions** – Can be extended with metadata (e.g., time, location, methodology).
@@ -54,3 +54,8 @@ By analyzing these relationships, defenders can identify **attack patterns**, im
 - [MITRE ATT&CK Framework](https://attack.mitre.org/)
 
 ---
+
+
+
+
+
