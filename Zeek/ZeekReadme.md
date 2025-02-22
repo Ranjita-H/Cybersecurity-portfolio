@@ -1,9 +1,5 @@
 # Zeek Network Security Monitor  
 
-[![Zeek](https://img.shields.io/badge/Zeek-Network%20Monitoring-orange)](https://zeek.org/)  
-[![License](https://img.shields.io/badge/License-BSD--3--Clause-blue)](https://opensource.org/licenses/BSD-3-Clause)  
-[![GitHub Release](https://img.shields.io/github/v/release/zeek/zeek?color=green)](https://github.com/zeek/zeek/releases)  
-
 ## 📌 Introduction  
 
 [Zeek](https://zeek.org/) (formerly Bro) is an advanced **open-source network security monitoring** tool designed for **passive network analysis, anomaly detection, and log generation**. It is widely used in **security operations centers (SOC)** and by **threat hunters** to monitor and analyze network traffic at scale.
