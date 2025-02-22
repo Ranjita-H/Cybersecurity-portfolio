@@ -147,9 +147,6 @@ Displays:
 Network Forensics is essential for identifying security threats, investigating breaches, and ensuring compliance. NetworkMiner provides an efficient way to analyze captured network traffic before deep-diving with tools like Wireshark. 
 
 ---
-### 📌 Recommended Next Steps:
-- Explore **Wireshark** for deep packet analysis
-- Set up **network traffic monitoring** in a lab environment
-- Experiment with **real-world PCAP files** to enhance investigative skills
+
 
 
