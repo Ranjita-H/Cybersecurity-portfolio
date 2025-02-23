@@ -12,10 +12,6 @@ Brim is an open-source desktop application designed for processing and analyzing
 - Allows for **threat hunting** through advanced queries  
 - Integrates with **Wireshark** for deeper packet analysis  
 
-## Folder Structure  
-
-This repository is structured to provide a comprehensive guide to Brim, including **usage**, **comparison with other tools**, **advanced query techniques**, and **real-world threat-hunting scenarios**.  
-
 
 ## **📖 Overview**  
 Brim is an open-source forensic and network traffic analysis tool designed to handle large PCAP files efficiently. It integrates with **Zeek**, **Suricata**, and **Wireshark**, enabling advanced search and filtering to detect cyber threats.
