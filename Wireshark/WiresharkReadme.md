@@ -88,5 +88,3 @@ Use Analyze → Expert Information to review detected anomalies.
 
 🎯 Conclusion
 Wireshark is a must-have tool for network engineers, cybersecurity analysts, and IT professionals. Mastering its filtering, packet analysis, and exporting features will enhance your ability to diagnose and troubleshoot network issues effectively.
-
-🔗 For more details, visit the Wireshark Documentation.
