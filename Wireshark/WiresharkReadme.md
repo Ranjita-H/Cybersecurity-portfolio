@@ -66,25 +66,28 @@ ip.dst == 192.168.1.2      # Filter packets to a specific IP
 tcp.port == 80             # Show only HTTP traffic  
 http.request               # Show HTTP requests  
 ```
-Other features include:
-✅ Packet marking – Highlight specific packets for review
-✅ Search packets – Locate packets by content, regex, or hex values
-✅ Conversation filtering – Show all packets in a communication session
+Other features include:  
+✅ **Packet marking** – Highlight specific packets for review  
+✅ **Search packets** – Locate packets by content, regex, or hex values  
+✅ **Conversation filtering** – Show all packets in a communication session  
 
-📂 Exporting and Saving Data
-Wireshark allows users to export packets for further analysis.
+## 📂 Exporting and Saving Data  
+Wireshark allows users to export packets for further analysis.  
+- **Export packets** (`File → Export`) to save relevant traffic  
+- **Extract transferred files** (HTTP, SMB, FTP) from captured streams  
+- **Save only marked packets** to reduce noise  
 
-Export packets (File → Export) to save relevant traffic
-Extract transferred files (HTTP, SMB, FTP) from captured streams
-Save only marked packets to reduce noise
-🛠️ Expert Information
-Wireshark categorizes potential issues using Expert Info, which assigns severity levels:
+## 🛠️ Expert Information  
+Wireshark categorizes potential issues using **Expert Info**, which assigns severity levels:  
+- 🔵 **Chat (Info)** – Normal workflow details  
+- 🔹 **Note (Cyan)** – Notable events or error codes  
+- 🟡 **Warning (Yellow)** – Potential issues  
+- 🔴 **Error (Red)** – Malformed packets or protocol violations  
 
-🔵 Chat (Info) – Normal workflow details
-🔹 Note (Cyan) – Notable events or error codes
-🟡 Warning (Yellow) – Potential issues
-🔴 Error (Red) – Malformed packets or protocol violations
-Use Analyze → Expert Information to review detected anomalies.
+Use `Analyze → Expert Information` to review detected anomalies.
 
-🎯 Conclusion
-Wireshark is a must-have tool for network engineers, cybersecurity analysts, and IT professionals. Mastering its filtering, packet analysis, and exporting features will enhance your ability to diagnose and troubleshoot network issues effectively.
+## 🎯 Conclusion  
+Wireshark is a must-have tool for network engineers, cybersecurity analysts, and IT professionals. Mastering its filtering, packet analysis, and exporting features will enhance your ability to diagnose and troubleshoot network issues effectively.  
+
+🔗 **For more details, visit the [Wireshark Documentation](https://www.wireshark.org/docs/).**  
+
