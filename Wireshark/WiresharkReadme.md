@@ -65,7 +65,7 @@ ip.src == 192.168.1.1      # Filter packets from a specific IP
 ip.dst == 192.168.1.2      # Filter packets to a specific IP  
 tcp.port == 80             # Show only HTTP traffic  
 http.request               # Show HTTP requests  
-
+```
 Other features include:
 ✅ Packet marking – Highlight specific packets for review
 ✅ Search packets – Locate packets by content, regex, or hex values
