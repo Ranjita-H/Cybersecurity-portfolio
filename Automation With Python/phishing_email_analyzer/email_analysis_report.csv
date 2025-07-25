@@ -1,0 +1,5 @@
+Subject,From,Score,Severity,Indicators
+Reset your password,security@goog1e.com,2,Low,Keyword match: 'click here'
+"Congratulations, you have won!",noreply@promo.xyz,5,Medium,Keyword match: 'you have won'; Suspicious domain: 'bit.ly'
+Invoice due,billing@trustedco.com,0,Low,
+Security alert,security@microsoft.support,4,Medium,Keyword match: 'credential'; Keyword match: 'security alert'
