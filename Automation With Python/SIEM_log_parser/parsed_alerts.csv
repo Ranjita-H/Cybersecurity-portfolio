@@ -1,0 +1,4 @@
+timestamp,host,event,raw_log
+2025-07-25T14:03:22,WIN-RDP-1,powershell,2025-07-25T14:03:22 host=WIN-RDP-1 event=powershell user=admin cmd=powershell -enc UwB0AGEAcgB0AC0A...
+2025-07-25T14:04:55,LINUX-DB,wget,2025-07-25T14:04:55 host=LINUX-DB event=wget url=http://malicious-site.biz
+2025-07-25T14:06:12,WIN-SQL,curl,2025-07-25T14:06:12 host=WIN-SQL event=curl url=https://fakebank.com/login.php
