@@ -23,15 +23,17 @@ python3 phishing_analyzer.py
 ```
 
 ## Scoring Logic
-**Indicator**  	**Score**
-Keyword match	    +2
-Suspicious domain	+3
-Spoofed sender	    +3
+|Indicator| 	Score|
+|---------|----------|
+|Keyword match|    +2|
+|Suspicious domain	+3|
+|Spoofed sender	    +3|
 
-**Final Score**	 **Severity**
-8+	             High
-4–7	             Medium
-< 4	             Low
+|Final Score| Severity|
+|-----------|---------|
+|8+	            |     High|
+|4–7	        |    Medium|
+|< 4	        |   Low|
 
 ## Skills Demonstrated
 Email analysis using Python
