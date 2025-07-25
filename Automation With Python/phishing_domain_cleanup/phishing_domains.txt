@@ -1,0 +1,4 @@
+# Recently reported phishing domains
+malicious-site.biz
+phishing-now.io
+fake-login.site

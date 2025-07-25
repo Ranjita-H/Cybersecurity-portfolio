@@ -1,0 +1,7 @@
+# List of domains trusted to send emails to employees
+example.com
+trustedhealth.org
+securemail.co
+goodguys.net
+malicious-site.biz
+phishing-now.io
