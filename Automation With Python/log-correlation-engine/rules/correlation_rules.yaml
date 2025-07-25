@@ -1,0 +1,8 @@
+- type: lateral_movement
+  description: Failed login followed by process execution under same user
+
+- type: data_exfiltration
+  description: Outbound connection to external IP after process execution
+  internal_ips:
+    - "10.0.0.1"
+    - "10.0.0.2"

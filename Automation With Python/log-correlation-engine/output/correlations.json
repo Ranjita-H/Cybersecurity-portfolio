@@ -1,0 +1,62 @@
+[
+    {
+      "correlation_id": "corr-001",
+      "type": "Privilege Escalation",
+      "description": "User 'bob' authenticated from 192.168.1.10 and started a SYSTEM-level process 'powershell.exe' within 5 minutes.",
+      "severity": "High",
+      "entities": {
+        "user": "bob",
+        "src_ip": "192.168.1.10",
+        "process": "powershell.exe"
+      },
+      "timestamp": "2025-07-25T10:22:45"
+    },
+    {
+      "correlation_id": "corr-002",
+      "type": "Lateral Movement",
+      "description": "Same user 'alice' authenticated to multiple hosts (192.168.1.20, 192.168.1.21) in quick succession using RDP.",
+      "severity": "Medium",
+      "entities": {
+        "user": "alice",
+        "method": "RDP",
+        "targets": ["192.168.1.20", "192.168.1.21"]
+      },
+      "timestamp": "2025-07-25T11:05:12"
+    },
+    {
+      "correlation_id": "corr-003",
+      "type": "Data Exfiltration",
+      "description": "Unusual data transfer from internal host 192.168.1.30 to external IP 203.0.113.45 on port 443 flagged by firewall.",
+      "severity": "Critical",
+      "entities": {
+        "src_host": "192.168.1.30",
+        "dst_ip": "203.0.113.45",
+        "port": 443,
+        "protocol": "HTTPS"
+      },
+      "timestamp": "2025-07-25T12:40:00"
+    },
+    {
+      "correlation_id": "corr-004",
+      "type": "Multiple Failed Logins Followed by Success",
+      "description": "User 'admin' failed login 5 times from IP 192.168.1.50, then succeeded within 10 minutes.",
+      "severity": "High",
+      "entities": {
+        "user": "admin",
+        "src_ip": "192.168.1.50",
+        "fail_count": 5
+      },
+      "timestamp": "2025-07-25T13:15:38"
+    },
+    {
+      "correlation_id": "corr-005",
+      "type": "Suspicious Process Chain",
+      "description": "'outlook.exe' launched 'cmd.exe', which launched 'powershell.exe'—common phishing tactic.",
+      "severity": "Medium",
+      "entities": {
+        "chain": ["outlook.exe", "cmd.exe", "powershell.exe"]
+      },
+      "timestamp": "2025-07-25T14:00:25"
+    }
+  ]
+  

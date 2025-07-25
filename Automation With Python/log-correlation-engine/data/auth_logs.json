@@ -1,0 +1,14 @@
+[
+    {
+        "timestamp": "2025-07-25T10:00:00",
+        "user": "alice",
+        "status": "failed",
+        "source_ip": "192.168.1.5"
+    },
+    {
+        "timestamp": "2025-07-25T10:05:00",
+        "user": "bob",
+        "status": "success",
+        "source_ip": "10.0.0.3"
+    }
+]
