@@ -26,8 +26,8 @@ python3 phishing_analyzer.py
 |Indicator| 	Score|
 |---------|----------|
 |Keyword match|    +2|
-|Suspicious domain	+3|
-|Spoofed sender	    +3|
+|Suspicious domain|	+3|
+|Spoofed sender|	    +3|
 
 |Final Score| Severity|
 |-----------|---------|
