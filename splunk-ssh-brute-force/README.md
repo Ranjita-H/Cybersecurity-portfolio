@@ -54,7 +54,7 @@ All screenshots are located in the /screenshots folder:
 |Filename|	Description|
 |--------|-------------|
 |raw_logs_splunk.png|	Raw SSH logs ingested in Splunk|
-|ioc_detection_search.png|	|IOC SPL search with highlighted results|
+|ioc_detection_search.png|	IOC SPL search with highlighted results|
 |dashboard_overview.png|	Full dashboard visual|
 |dashboard_panel_spl.png|	Panel-level SPL query logic|
 |source_of_log_data.png	|Proof of log file source (auth.log)|
