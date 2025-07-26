@@ -30,21 +30,21 @@ I'm Ranjita, a certified cybersecurity analyst with hands-on experience in threa
 ### 🔹 AWS S3 Static Website Hosting  
 **What it does:** Walkthrough of deploying a static website on S3. Solves 403 access issues using ACLs and public policies.  
 **Skills:** Cloud storage, access control, networking basics  
- [`aws-s3-static-site-hosting`](./aws-s3-static-site-hosting)
+ [`aws-s3-static-site-hosting`](./AWS_Projects/AWS_S3_static_website_hosting)
 
 ---
 
 ### 🔹 Python: Phishing Email Analyzer  
 **What it does:** Parses raw email headers and extracts indicators (IP, domain, SPF/DKIM results). Flags suspicious traits for triage.  
 **Skills:** Python scripting, threat intel, email forensics  
- [`phishing-header-analyzer`](./phishing-header-analyzer)
+ [`phishing_email_analyzer`](./phishing_email_analyzer)
 
 ---
 
 ### 🔹 Python: SIEM Log Parser  
 **What it does:** Converts JSON-formatted log files into clean CSVs for SIEM ingestion. Supports field filtering and basic normalization.  
 **Skills:** Log parsing, Python, data engineering for security  
- [`siem-log-parser`](./siem-log-parser)
+ [`SIEM_log_parser`](./SIEM_log_parser)
 
 ---
 
