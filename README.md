@@ -68,6 +68,14 @@ Every project here is hands-on, independently executed, and designed to simulate
 
 ---
 
+---
+##  Certifications
+
+- CompTIA Security+ (Feb 2025)
+- ISC2 CC
+- Cisco Intro to Cybersecurity
+---
+
 ##  Let's Connect
 
 - [LinkedIn](https://www.linkedin.com/in/ranjita-hukkeri-a9b50ba9/)  
