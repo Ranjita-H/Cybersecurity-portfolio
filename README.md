@@ -37,14 +37,14 @@ I'm Ranjita, a certified cybersecurity analyst with hands-on experience in threa
 ### 🔹 Python: Phishing Email Analyzer  
 **What it does:** Parses raw email headers and extracts indicators (IP, domain, SPF/DKIM results). Flags suspicious traits for triage.  
 **Skills:** Python scripting, threat intel, email forensics  
- [`phishing_email_analyzer`](./Automation With Python/phishing_email_analyzer)
+ [`phishing_email_analyzer`](./Automation_With_Python/phishing_email_analyzer)
 
 ---
 
 ### 🔹 Python: SIEM Log Parser  
 **What it does:** Converts JSON-formatted log files into clean CSVs for SIEM ingestion. Supports field filtering and basic normalization.  
 **Skills:** Log parsing, Python, data engineering for security  
- [`SIEM_log_parser`](./Automation With Python/SIEM_log_parser)
+ [`SIEM_log_parser`](./Automation_With_Python/SIEM_log_parser)
 
 ---
 
