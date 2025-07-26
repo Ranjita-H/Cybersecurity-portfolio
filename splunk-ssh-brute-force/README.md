@@ -24,25 +24,6 @@ This project simulates SSH brute-force attacks on a Linux machine and detects th
 
 ---
 
-##  Folder Structure
-
-.
-├── README.md
-├── data/
-│ └── sample_auth.log
-├── spl/
-│ ├── failed_attempts_by_ip.spl
-│ └── all_queries.txt
-├── screenshots/
-│ ├── raw_logs_splunk.png
-│ ├── ioc_detection_search.png
-│ ├── dashboard_overview.png
-│ ├── dashboard_panel_spl.png
-│ └── source_of_log_data.png
-
-
-
----
 
 ##  Log Source
 
@@ -55,7 +36,7 @@ This file contains all SSH login activity on the Linux system.
 ```log
 Jul 25 12:15:23 ubuntu sshd[1211]: Failed password for invalid user test from 192.168.1.50 port 50222 ssh2
 Jul 25 12:15:27 ubuntu sshd[1211]: Accepted password for root from 192.168.1.50 port 50224 ssh2
-These logs were ingested into Splunk via a Universal Forwarder or manual import.
+These logs were ingested into Splunk via manual import.
 ```
 ## SPL Queries
 ## Failed Attempts by IP
@@ -71,6 +52,7 @@ Use: Identify source IPs attempting brute-force logins.
 All screenshots are located in the /screenshots folder:
 
 |Filename|	Description|
+|--------|-------------|
 |raw_logs_splunk.png|	Raw SSH logs ingested in Splunk|
 |ioc_detection_search.png|	|IOC SPL search with highlighted results|
 |dashboard_overview.png|	Full dashboard visual|
