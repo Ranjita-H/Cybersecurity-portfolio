@@ -34,6 +34,22 @@ I'm Ranjita, a certified cybersecurity analyst with hands-on experience in threa
 
 ---
 
+### 🔹 Python: Log Correlation Engine  
+**What it does:**Aggregates and correlates events from multiple log sources like authentication logs, web server logs, and endpoint logs. Detects patterns of suspicious activity by correlating events by IP address, user, and timestamp to highlight potential multi-stage attacks.  
+**Skills:**Python, log aggregation, correlation logic, timeline analysis, event enrichment  
+ [`log_correlation_engine`](./Automation_With_Python/log_correlation_engine)
+
+---
+---
+
+### 🔹 Python:  Phishing Domain Cleanup Script  
+**What it does:**Processes CSV lists of suspected phishing URLs and domains. Removes duplicates, validates domain syntax, checks reputation using APIs, and produces a clean, actionable list for threat triage or blocking.
+**Skills:** Python, CSV manipulation, domain validation, API integration, data cleaning  
+ [`phishing_domain_cleanup`](./Automation_With_Python/phishing_domain_cleanup)
+
+---
+---
+
 ### 🔹 Python: Phishing Email Analyzer  
 **What it does:** Parses raw email headers and extracts indicators (IP, domain, SPF/DKIM results). Flags suspicious traits for triage.  
 **Skills:** Python scripting, threat intel, email forensics  
